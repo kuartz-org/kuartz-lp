@@ -1,0 +1,25 @@
+header.bg-gray-100.py-16
+  .container.mx-auto.px-4 class="md:px-0"
+    = partial 'partials/header'
+    .mt-12
+      = partial 'components/button', locals: { text: 'Contactez-nous', path: '' }
+
+section.my-12.container.mx-auto.px-4 class="md:px-0 md:flex"
+  div class="md:w-1/2"
+    = partial 'partials/killer_features'
+  .flex.justify-center class="md:w-1/2"
+    = image_tag 'app_preview.png', class: 'md:w-2/3'
+
+section.bg-gray-100.py-16
+  .container.mx-auto.px-4 class="md:px-0"
+    h2.text-3xl.leading-none.font-extrabold.text-gray-900.tracking-normal.text-center class="md:text-4xl md:tracking-tight"
+      | Prêt à reprendre le contrôle ?
+    .mt-10.flex.justify-center
+      = partial 'components/button', locals: { text: 'Contactez-nous', path: '' }
+
+section.my-12.container.mx-auto.px-4 class="md:px-0"
+  = partial 'partials/other_features'
+
+section.bg-indigo-900.py-12 class="md:py-16"
+  .container.mx-auto.px-4 class="md:px-0"
+    = partial 'partials/email_form'
