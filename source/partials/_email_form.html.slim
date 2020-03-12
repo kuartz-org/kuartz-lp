@@ -1,16 +1,17 @@
 section class="md:flex md:items-center md:justify-between"
   header class="md:mr-2"
     h2.text-2xl.leading-none.font-extrabold.text-white.tracking-normal.text-center class="md:text3xl md:text-left"
-      | Contactez-nous
-    p.text-gray-300.leading-tight.mt-2.text-center class="md:text-xl md:text-left"
-      | Pour obtenir toutes les informations sur notre service.
+      | Discutons de votre projet
+    p.text-gray-300.leading-tight.mt-2.text-center class="md:text-xl md:text-left md:w-2/3"
+      | Pour adapter notre outil aux besoins de votre entreprise.
 
   article.ml-2.mt-6 class="md:mt-0"
-    = form_tag '/' do
+    = form_tag '/', name: 'new-contact', data: { netlify: 'true' } do
       div class="md:flex md:items-center"
-        = label_tag :email, class: 'hidden'
-        = text_field_tag :email, placeholder: 'alice@exemple.fr', class: 'w-full flex-grow bg-white px-4 py-3 rounded shadow'
 
-        = submit_tag "Valider", class: 'bg-indigo-600 px-5 py-3 text-indigo-100 font-semibold rounded hover:bg-indigo-500 block w-full md:w-auto text-center md:inline cursor-pointer md:ml-4 shadow mt-6 md:mt-0'
+        = label_tag :email_address, class: 'hidden'
+        = text_field_tag :email_address, placeholder: 'alice@exemple.fr', class: 'w-full flex-grow bg-white px-4 py-3 rounded shadow'
+
+        = submit_tag "Prendre contact", class: 'bg-indigo-600 px-5 py-3 text-indigo-100 font-semibold rounded hover:bg-indigo-500 block w-full md:w-auto text-center md:inline cursor-pointer md:ml-4 shadow mt-6 md:mt-0'
     p.text-gray-400.leading-tight.mt-2.text-center class="md:text-left"
-      | Vos données personnelles ne seront jamais données ou vendues.
+      | Vos données personnelles ne seront jamais partagées.
