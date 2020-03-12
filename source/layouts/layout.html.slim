@@ -12,6 +12,18 @@ html prefix="og: http://ogp.me/ns#" lang="#{data.settings.site.i18n}"
     = stylesheet_link_tag 'application'
     = yield_content :head
 
+    // Global site tag (gtag.js) - Google Analytics
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-143942495-1")
+    javascript:
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-143942495-1');
+
+    // Crisp chat
+    javascript:
+      window.$crisp=[];window.CRISP_WEBSITE_ID="f732981a-50c2-4b0c-a40c-c9b2ef22aaf5";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+
   body
     .border.border-t-8.border-indigo-600
     == yield
