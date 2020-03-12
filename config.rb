@@ -40,7 +40,7 @@ configure :build do
   activate :gzip
   activate :minify_css
   activate :minify_html, remove_input_attributes: false
-  activate :minify_javascript
+  # activate :minify_javascript
 
   activate :sitemap, hostname: @app.data.settings.site.url
   activate :sitemap_ping do |config|
@@ -54,16 +54,4 @@ configure :build do
   # Use this for github.io gh-pages
   set :relative_links, true
   activate :relative_assets
-end
-
-# Push-it to the web
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.branch        = 'gh-pages'
-  deploy.build_before  = true # always use --no-clean options
-
-  committer_app = "#{Middleman::Deploy::PACKAGE} v#{Middleman::Deploy::VERSION}"
-  commit_message = "Deployed using #{committer_app}"
-
-  deploy.commit_message = commit_message
 end
