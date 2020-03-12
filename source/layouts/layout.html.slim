@@ -28,4 +28,6 @@ html prefix="og: http://ogp.me/ns#" lang="#{data.settings.site.i18n}"
     .border.border-t-8.border-indigo-600
     == yield
 
+    = partial 'partials/footer'
+
     = javascript_include_tag 'all.bundle'
