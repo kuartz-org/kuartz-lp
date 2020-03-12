@@ -1,9 +1,10 @@
 h2
 
 - data.other_features.each_with_index do |feature, index|
-  article.flex.mb-12 class=("flex-row-reverse" if index.odd?)
-    .px-12.flex.justify-center class="w-1/2"
-      = image_tag "#{feature.image}.png", class: 'h-full'
-    .px-12 class="w-1/2"
+  article.mb-12 class=("md:flex-row-reverse" if index.even?) class="md:flex md:items-center"
+    .mb-8 class="md:w-1/2 md:px-12 md:mb-0"
       h3.text-xl.leading-6.font-semibold.text-gray-900 = feature.title
       p.text-gray-600.mt-2.text-base.leading-6 = feature.content
+
+    .flex.justify-center class="md:w-1/2 md:px-12"
+          = image_tag "#{feature.image}.png", class: ''
