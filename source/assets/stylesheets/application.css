@@ -1,1 +1,21 @@
 @charset 'utf-8';
+
+.mardown-page {
+  color: #4A5568;
+}
+
+.mardown-page h1 {
+  font-size: 1.875rem;
+  color: #1A202C
+}
+
+.mardown-page h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2D3748;
+}
+
+.mardown-page p {
+  margin-bottom: 0.25rem;
+}
