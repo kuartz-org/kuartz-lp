@@ -33,7 +33,8 @@ section.bg-gray-100.py-20 style="background-image: url('assets/images/bg-grid.pn
 
     .flex.justify-center
       .mt-8 class="md:flex md:items-center"
-        = image_tag 'reviews/parrotin.jpg', class: 'h-16 p-2 rounded-full mx-auto'
+        .h-16
+          = image_tag 'reviews/parrotin.jpg', class: 'p-2 rounded-full mx-auto md:mx-0 h-full'
         p.text-center class="md:text-xl"
           | Catherine Parrotin
           span.mx-2.text-indigo-700.font-extrabold.text-2xl.hidden class="md:inline"
