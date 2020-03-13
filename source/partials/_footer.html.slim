@@ -1,25 +1,26 @@
-footer.py-12.w-full.bg-gray-900
-  .container.mx-auto
-    = link_to '/' do
-      = svg_tag 'logos/logo.svg'
+footer.py-12.w-full.bg-gray-900.text-center class="md:text-left"
+  .container.mx-auto.px-4 class="md:px-0"
 
-    .flex
-      div class="md:w-1/3"
-        h5.text-gray-400.font-semibold.mb-2 À propos
+    = link_to '/', class: 'inline-block' do
+      = svg_tag 'logos/logo.svg', class: 'bg-white rounded-full h-24 w-24 p-4 md:mb-4'
+
+    div class="md:flex"
+      .mt-8 class="md:w-1/3 md:mt-0"
+        h5.text-gray-400.font-semibold class="md:mb-2" À propos
         ul.text-gray-600
-          li = link_to 'Contactez-nous', 'mailto:contact@kuartz.fr'
-          li = link_to 'https://www.linkedin.com/company/kuartz', target: "_blank", rel: "noopener noreferrer" do
+          li.mt-2 class="md:mt-0" = link_to 'Contactez-nous', 'mailto:contact@kuartz.fr'
+          li.mt-2 class="md:mt-0" = link_to 'https://www.linkedin.com/company/kuartz', target: "_blank", rel: "noopener noreferrer" do
             span Suivez-nous sur
             span.text-gray-500< Linkedin
 
-      div class="md:w-1/3"
-        /h5.text-gray-400.font-semibold.mb-2 Jobs
+      .mt-8 class="md:w-1/3 md:mt-0"
+        /h5.text-gray-400.font-semibold class="md:mb-2" Jobs
         /ul.text-gray-600
-          li = link_to 'Kuartz recrute !', '/jobs'
-          li = link_to 'Candidature spontanée', '/jobs/job_application'
+          li.mt-2 class="md:mt-0" = link_to 'Kuartz recrute !', '/jobs'
+          li.mt-2 class="md:mt-0" = link_to 'Candidature spontanée', '/jobs/job_application'
 
-      div class="md:w-1/3"
-        h5.text-gray-400.font-semibold.mb-2 Légal
+      .mt-8 class="md:w-1/3 md:mt-0"
+        h5.text-gray-400.font-semibold class="md:mb-2" Légal
         ul.text-gray-600
-          li = link_to 'Mentions légales', '/mentions-legales'
-          li = link_to 'Cookies 🍪', '/mentions-legales#cookies'
+          li.mt-2 class="md:mt-0" = link_to 'Mentions légales', '/mentions-legales'
+          li.mt-2 class="md:mt-0" = link_to 'Cookies 🍪', '/mentions-legales#cookies'
