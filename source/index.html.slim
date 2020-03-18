@@ -1,17 +1,17 @@
 header.bg-gray-100.py-16
-  .container.mx-auto.px-4 class="md:px-0"
+  .container.mx-auto.px-4 class="lg:px-0"
     = partial 'partials/header'
     .mt-12
       = partial 'components/open_crisp_button'
 
-section.my-12.container.mx-auto.px-4 class="md:px-0 md:flex"
+section.my-12.container.mx-auto.px-4 class="lg:px-0 md:flex"
   div class="md:w-1/2"
     = partial 'partials/killer_features'
   .flex.justify-center class="md:w-1/2"
     = image_tag 'app_preview.png', class: 'md:w-2/3'
 
 section.bg-gray-100.py-16
-  .container.mx-auto.px-4 class="md:px-0"
+  .container.mx-auto.px-4 class="lg:px-0"
     div class="md:flex md:justify-between"
       - data.brands.each do |brand|
         = image_tag "brands/#{brand.logo}", class: 'h-6 mb-6 md:mb-0 mx-auto', style: "filter: grayscale(100%) opacity(50%);"
@@ -20,7 +20,7 @@ section.bg-gray-100.py-16
     .mt-10.flex.justify-center
       = partial 'components/open_crisp_button'
 
-section.my-12.container.mx-auto.px-4 class="md:px-0"
+section.my-12.container.mx-auto.px-4 class="lg:px-0"
   = partial 'partials/other_features'
 
 section.bg-gray-100.py-20 style="background-image: url('assets/images/bg-grid.png'); background-repeat: no-repeat; background-position: bottom left"
