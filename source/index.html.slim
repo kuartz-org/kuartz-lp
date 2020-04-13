@@ -7,8 +7,8 @@ header.bg-gray-100.py-16
 section.my-12.container.mx-auto.px-4 class="lg:px-0 md:flex"
   div class="md:w-1/2"
     = partial 'partials/killer_features'
-  .flex.justify-center class="md:w-1/2"
-    = image_tag 'app_preview.png', class: 'md:w-2/3'
+  .flex.justify-center class="md:w-1/3 mx-auto"
+    = image_tag 'app_preview.gif'
 
 section.bg-gray-100.py-16
   .container.mx-auto.px-4 class="lg:px-0"
@@ -23,23 +23,13 @@ section.bg-gray-100.py-16
 section.my-12.container.mx-auto.px-4 class="lg:px-0"
   = partial 'partials/other_features'
 
-section.bg-gray-100.py-20 style="background-image: url('assets/images/bg-grid.png'); background-repeat: no-repeat; background-position: bottom left"
-  .container.mx-auto.px-4 class="md:px-0"
-    .flex.justify-center
-      p.text-xl.leading-tight.text-gray-900.tracking-wide.text-center class="md:text-2xl md:w-2/3 md:leading-normal"
-        span.font-semibold “
-        | En automatisant la signature des attestations obligatoires, Kuartz nous fait gagner 15 jours de travail par an.
-        span.font-semibold ”
+section.bg-gray-100.py-12
+  .container.mx-auto.px-4 class="lg:px-0"
+    = partial 'partials/solution'
 
-    .flex.justify-center
-      .mt-8 class="md:flex md:items-center"
-        .h-16
-          = image_tag 'reviews/parrotin.jpg', class: 'p-2 rounded-full mx-auto md:mx-0 h-full'
-        p.text-center class="md:text-xl"
-          | Catherine Parrotin
-          span.mx-2.text-indigo-700.font-extrabold.text-2xl.hidden class="md:inline"
-            | /
-          span.text-gray-600.text-sm.block class="md:inline md:text-base" PDG, Avenir Électrique de Limoges
+// QUOTES TODO
+/section.bg-gray-100.py-20 style="background-image: url('assets/images/bg-grid.png'); background-repeat: no-repeat; background-position: bottom left"
+  = partial 'partials/quotes'
 
 section.bg-white.py-16
   .container.mx-auto.px-4 class="md:px-0"

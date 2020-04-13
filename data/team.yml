@@ -1,30 +1,37 @@
 -
-  fullname: Timothée Garcia
-  image: tim
-  jobs:
-    - CEO
--
   fullname: Guillaume Cabanel
   image: guillaume
   jobs:
     - CTO
 -
-  fullname: Pierre Tissot
-  image: pierre
-  jobs:
-    - Développeur Full Stack
--
-  fullname: Romain Garica
-  image: romain
-  jobs:
-    - Développeur Full Stack
--
-  fullname: Marion Fiche
-  image: marion
-  jobs:
-    - UI
--
   fullname: Nicolas Filzi
   image: nico
   jobs:
     - Mentor
+-
+  fullname: Romain Garcia
+  image: romain
+  jobs:
+    - Développeur Full Stack
+-
+  fullname: Timothée Garcia
+  image: tim
+  jobs:
+    - CEO
+-
+  fullname: Pierre Tissot
+  image: pierre
+  jobs:
+    - Développeur Full Stack
+
+# -
+#   fullname: Marion Fiche
+#   image: marion
+#   jobs:
+#     - UI
+
+# -
+#   fullname: Chloé Roussel
+#   image: clo
+#   jobs:
+#     - Consultante Sales

@@ -1,8 +1,7 @@
 section
   - data.killer_features.each do |feature|
-    article.mb-8.flex.items-start class="last-child:mb-0"
+    article.mb-8.flex.items-center class="last-child:mb-0"
       .bg-indigo-700.p-4.inline-block.rounded-lg
         = svg_tag "svg/#{feature.icon}.svg", class: 'w-6'
       .ml-3
         h4.text-lg.leading-6.font-semibold.text-gray-900 = feature.title
-        p.text-gray-600.mt-2.text-base.leading-6 = feature.content

@@ -1,7 +1,7 @@
 .mt-10 class="md:flex md:justify-between md:flex-wrap"
-  - data.team.shuffle.each do |member|
-    .flex.justify-center.mb-8 class="md:w-1/3"
-      .bg-gray-200.rounded-t.shadow-inner
+  - data.team.each do |member|
+    .flex.justify-center.mb-8 class="md:w-1/5"
+      .bg-gray-300.rounded-t.shadow-inner
         = image_tag "team/#{member.image}.png", class: 'w-48'
         .bg-gray-800.px-4.py-2.rounded-b
           p.text-gray-300.font-semibold = member.fullname

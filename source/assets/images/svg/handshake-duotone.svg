@@ -10,13 +10,13 @@
    aria-hidden="true"
    focusable="false"
    data-prefix="fad"
-   data-icon="yin-yang"
-   class="svg-inline--fa fa-yin-yang fa-w-16"
+   data-icon="handshake"
+   class="svg-inline--fa fa-handshake fa-w-20"
    role="img"
-   viewBox="0 0 496 512"
+   viewBox="0 0 640 512"
    version="1.1"
    id="svg8"
-   sodipodi:docname="yin-yang-duotone.svg"
+   sodipodi:docname="handshake-duotone.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata14">
@@ -45,25 +45,25 @@
      id="namedview10"
      showgrid="false"
      inkscape:zoom="0.4609375"
-     inkscape:cx="248"
+     inkscape:cx="320"
      inkscape:cy="238.64407"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
+     inkscape:current-layer="g6" />
   <g
      class="fa-group"
      id="g6"
-     style="fill:#ffffff;fill-opacity:1">
+     style="fill:#000000;fill-opacity:1">
     <path
        class="fa-secondary"
-       d="M 248,8 C 111,8 0,119 0,256 0,393 111,504 248,504 a 124,124 0 0 1 0,-248 124,124 0 0 0 0,-248 z m 0,152 a 32,32 0 1 1 32,-32 32,32 0 0 1 -32,32 z m 0,192 a 32,32 0 1 0 32,32 32,32 0 0 0 -32,-32 z"
+       d="M 0,384 H 64 A 32,32 0 0 0 96,352 V 128.2 H 0 Z m 48,-63.9 a 16,16 0 1 1 -16,16 16,16 0 0 1 16,-16 z M 457.3,73.4 A 31.77,31.77 0 0 0 434.7,64 h -85.9 a 32,32 0 0 0 -21.6,8.4 l -98.3,90 c -0.1,0.1 -0.2,0.3 -0.3,0.4 a 39.78,39.78 0 0 0 -2.1,56 c 12.7,13.9 39.4,17.6 56.1,2.7 0.1,-0.1 0.3,-0.1 0.4,-0.2 l 79.9,-73.2 a 16,16 0 0 1 21.6,23.6 L 358.4,195.6 504,313.8 a 72,72 0 0 1 7.9,7.7 V 128 Z"
        id="path2"
        inkscape:connector-curvature="0"
        style="opacity:0.4;fill:#ffffff;fill-opacity:1" />
     <path
        class="fa-primary"
-       d="m 248,160 a 32,32 0 1 0 -32,-32 32,32 0 0 0 32,32 z M 248,8 a 124,124 0 0 1 0,248 124,124 0 0 0 0,248 C 385,504 496,393 496,256 496,119 385,8 248,8 Z m 0,408 a 32,32 0 1 1 32,-32 32,32 0 0 1 -32,32 z"
+       d="m 544,128.2 v 223.9 a 32,32 0 0 0 32,32 h 64 V 128.2 Z m 48,223.9 a 16,16 0 1 1 16,-16 16,16 0 0 1 -16,16 z M 483.9,338.7 334.6,217.5 304.6,245 A 72,72 0 0 1 207.3,138.9 L 289.1,64 h -83.8 a 31.94,31.94 0 0 0 -22.6,9.4 L 128,128 v 223.9 h 18.3 l 90.5,81.9 a 64,64 0 0 0 90,-9.3 l 0.2,-0.2 17.9,15.5 a 37.16,37.16 0 0 0 52.3,-5.4 l 31.4,-38.6 5.4,4.4 a 32,32 0 0 0 45,-4.7 l 9.5,-11.7 a 32.06,32.06 0 0 0 -4.6,-45.1 z"
        id="path4"
        inkscape:connector-curvature="0"
        style="fill:#ffffff;fill-opacity:1" />
