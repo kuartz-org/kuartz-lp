@@ -4,6 +4,11 @@
   jobs:
     - CTO
 -
+  fullname: Marion Fiche
+  image: marion
+  jobs:
+    - UI
+-
   fullname: Nicolas Filzi
   image: nico
   jobs:
@@ -23,12 +28,6 @@
   image: pierre
   jobs:
     - Développeur Full Stack
-
-# -
-#   fullname: Marion Fiche
-#   image: marion
-#   jobs:
-#     - UI
 
 # -
 #   fullname: Chloé Roussel
