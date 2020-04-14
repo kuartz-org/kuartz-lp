@@ -7,35 +7,14 @@ html prefix="og: http://ogp.me/ns#" lang="#{data.settings.site.i18n}"
     meta name="viewport"              content="width=device-width, initial-scale=1.0"
     = partial 'layouts/commons/meta_tags'
     = partial 'layouts/commons/favicon'
+    = partial 'layouts/commons/js_utilities'
 
     script src="https://kit.fontawesome.com/5c50897e10.js" crossorigin="anonymous"
     link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"
+
     = stylesheet_link_tag 'application'
     = yield_content :head
 
-    // Global site tag (gtag.js) - Google Analytics
-    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-143942495-1")
-    javascript:
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-143942495-1');
-
-    // Hotjar Tracking Code
-    javascript:
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1767273,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-
-
-    // Crisp chat
-    javascript:
-      window.$crisp=[];window.CRISP_WEBSITE_ID="f732981a-50c2-4b0c-a40c-c9b2ef22aaf5";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
 
   body
     .border.border-t-8.border-indigo-600

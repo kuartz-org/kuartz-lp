@@ -1,13 +1,16 @@
-.flex
+.flex.items-center
   .max-w-screen-md
     h1.text-4xl.leading-none.font-extrabold.text-gray-900.tracking-normal class="md:text-6xl md:tracking-tight"
-      | Reprenez le contrôle sur
-      span.text-indigo-700< vos données métiers
+      | Faites-en plus,
+      span.text-indigo-700< en moins de temps
 
     p.text-xl.text-gray-700.leading-tight.mt-4
-      | Faites-en plus, en moins de temps grâce à notre outil collaboratif
+      | Reprenez le contrôle sur vos données métiers grâce à notre outil collaboratif
       span.font-semibold<> Kuartz
       | intégré au cœur de vos process.
 
-  .max-w-screen-md.mx-auto.hidden class="md:block"
-    = svg_tag  "logos/logo.svg"
+    .mt-12
+      = partial 'components/open_crisp_button'
+
+  .max-w-screen-md.mx-auto.hidden.p-16 class="md:block"
+    = image_tag "hero.svg"
