@@ -1,16 +1,16 @@
-header.bg-gray-200.py-16
+header.bg-gray-200.py-8 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
     = partial 'partials/header'
 
-section.py-16
+section.py-8 class="md:py-16"
   .container.mx-auto.px-4.justify-between class="md:px-16 lg:px-32 md:flex"
-    .p-8.flex-shrink
-      = svg_tag 'app.svg'
+    .px-8.flex-shrink
+      = svg_tag 'app.svg', class: 'w-64 md:w-auto'
 
-    .p-8.flex-grow
+    .px-8.flex-grow
       = partial 'partials/killer_features'
 
-section.k-bg-blue.py-16
+section.k-bg-blue.py-8 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
     div class="md:flex md:justify-between"
       - data.brands.each do |brand|
@@ -20,11 +20,11 @@ section.k-bg-blue.py-16
     .mt-10.flex.justify-center
       = partial 'components/open_crisp_button'
 
-section.bg-gray-200.py-16
+section.bg-gray-200.py-8 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
     = partial 'partials/other_features'
 
-section.py-16
+section.py-8 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
     = partial 'partials/solution'
 
@@ -32,7 +32,7 @@ section.py-16
 /section.bg-gray-200.py-20 style="background-image: url('assets/images/bg-grid.png'); background-repeat: no-repeat; background-position: bottom left"
   = partial 'partials/quotes'
 
-section.bg-gray-200.py-16
+section.bg-gray-200.py-8 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
     h2.text-3xl.leading-none.font-extrabold.text-gray-900.tracking-normal.text-center class="md:text-4xl md:tracking-tight"
       | Nous avons hâte de vous rencontrer !
