@@ -1,11 +1,11 @@
 -
   title: Gagnez du temps
-  icon: rocket-launch-duotone
-
--
-  title: Réagissez rapidement aux opportunités du marché
-  icon: handshake-duotone
+  icon: hand-clock
 
 -
   title: Pilotez facilement votre entreprise
-  icon: sliders-h-duotone
+  icon: magn-cloud-bars
+
+-
+  title: Réagissez rapidement aux opportunités du marché
+  icon: speed-clock

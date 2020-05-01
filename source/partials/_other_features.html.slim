@@ -1,14 +1,13 @@
 h2
 
 - data.other_features.each_with_index do |feature, index|
-  article.mb-32 class=("md:flex-row-reverse" if index.even?) class="md:flex md:items-center"
-    .mb-8 class="md:w-1/2 md:mb-0"
+  article.my-16 class="md:flex md:items-center"
+    .mr-8
+      = svg_tag "svg/#{feature.image}.svg"
+    div
       h3.text-2xl.leading-6.font-semibold.text-gray-900 = feature.title
       ul.text-xl.text-gray-600.mt-2.text-base.leading-6
         - feature.content.each do |item|
           li.flex.items-baseline.mt-4
-            i.fad.fa-dot-circle.fa-sm.text-indigo-700.mr-2
+            i.fad.fa-arrow-up.fa-sm.k-text-red.mr-2 style="transform: rotate(45deg);"
             div = item
-
-    .flex.justify-center class="md:w-1/2"
-          = image_tag "#{feature.image}", class: 'w-64'

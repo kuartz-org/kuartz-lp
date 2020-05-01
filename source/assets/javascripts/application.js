@@ -1,6 +1,3 @@
-// Import JavaScript files
-// import './file';
-
 document.addEventListener('DOMContentLoaded', (event) => {
   const openCrispButtons = document.querySelectorAll('.open-crisp');
 
