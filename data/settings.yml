@@ -1,13 +1,13 @@
 site:
   title: Kuartz
   title_separator: •
-  description: 'Reprenez le contrôle sur vos données métiers grâce notre outil collaboratif Kuartz intégré au cœur de vos process.'
+  description: 'Moitié tableur, moitié base de données, entièrement flexible, Kuartz vous aide à concrétiser vos objectifs.'
   i18n: fr
   geo:
     placename: 'Nantes'
     position: 47.2181;-1.5528
     region: FR-44
-  url: 'https://kuartz.app'
+  url: 'https://www.kuartz.fr'
   twitter_card_img: 'https://raw.githubusercontent.com/flexbox/codeless/master/source/favicon_base.png'
   author: Kuartz
 

@@ -1,18 +1,24 @@
 -
   name: Société Générale
   logo: societe-generale-logo.png
+  position: w
 -
   name: Crédit Mutuel
   logo: credit-mutuel-logo.png
+  position: w
 -
   name: Technip FMC
   logo: techinip-logo.png
+  position: w
 -
   name: SFR
   logo: sfr-logo.png
+  position: h
 -
   name: EP
   logo: ep-logo.png
+  position: h
 -
   name: PSL
   logo: psl-logo.png
+  position: h

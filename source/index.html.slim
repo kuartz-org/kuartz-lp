@@ -12,13 +12,7 @@ section.py-8 class="md:py-16"
 
 section.k-bg-blue.py-8 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
-    div class="md:flex md:justify-between"
-      - data.brands.each do |brand|
-        = image_tag "brands/#{brand.logo}", class: 'h-6 mb-6 md:mb-0 mx-auto', style: "filter: brightness(.5) grayscale(1) invert(1);"
-    h2.mt-12.text-3xl.leading-none.font-extrabold.text-gray-100.tracking-normal.text-center class="md:text-4xl md:tracking-tight"
-      | Êtes-vous, vous aussi, prêt à reprendre le contrôle ?
-    .mt-10.flex.justify-center
-      = partial 'components/open_crisp_button'
+    = partial 'partials/brands'
 
 section.bg-gray-200.py-8 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
