@@ -35,3 +35,23 @@ section.bg-gray-200.py-8 class="md:py-16"
 section.k-bg-blue.py-12 class="md:py-16"
   .container.mx-auto.px-4 class="md:px-16 lg:px-32"
     = partial 'partials/email_form'
+
+
+section.bg-gray-200.py-8 class="md:py-16"
+  .container.mx-auto.px-4 class="md:px-16 lg:px-32"
+    .flex.space-between data-controller="showcase"
+      section.mr-12
+        = image_tag 'kanban.png', data: { target: 'showcase.image' }
+
+      section class="w-1/3"
+        h3.text-xl.text-gray-800.leading-relaxed.font-semibold
+          | La vue parfaite pour la tâche à accomplir.
+
+        ul.mt-4
+          - data.showcase.each do |view|
+            li
+              = link_to "##{view.slug}",
+                        data: { action: 'showcase#displayImage', target: 'showcase.link', image: image_path(view.image)},
+                        class: 'px-4 py-2 cursor-pointer text-gray-500 hover:text-gray-600 font-semibold text-lg bg-none block rounded-lg' do
+                i.fad.fa-lg.mr-3.fa-fw class=("fa-#{view.icon}")
+                = view.title.capitalize

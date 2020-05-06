@@ -41,3 +41,7 @@
 .k-bg-blue {
   background-color: #303062;
 }
+
+a {
+  outline: none;
+}

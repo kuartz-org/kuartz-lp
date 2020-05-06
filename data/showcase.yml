@@ -1,0 +1,15 @@
+-
+  slug: 'grid'
+  image: 'grid.png'
+  title: 'Grille'
+  icon: 'th'
+-
+  slug: 'calendar'
+  image: 'calendar.png'
+  title: 'Calendrier'
+  icon: 'calendar-alt'
+-
+  slug: 'kanban'
+  image: 'kanban.png'
+  title: 'Board Kanban'
+  icon: 'grip-vertical'
