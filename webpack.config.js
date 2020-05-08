@@ -14,7 +14,7 @@ module.exports = {
   },
   resolve: {
     modules: [
-      __dirname + '/assets/javascript',
+      __dirname + '/assets/javascripts',
       __dirname + '/assets/stylesheets',
       __dirname + '/node_modules',
     ],
