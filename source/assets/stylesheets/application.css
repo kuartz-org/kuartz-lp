@@ -45,3 +45,9 @@
 a {
   outline: none;
 }
+
+
+#showcase .mobile {
+  bottom: -2rem;
+  right: 2rem;
+}

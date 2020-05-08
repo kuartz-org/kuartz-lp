@@ -1,15 +1,39 @@
 -
   slug: 'grid'
-  image: 'grid.png'
+  image: 'showcase/grid.png'
   title: 'Grille'
   icon: 'th'
+  mobile:
+    image: 'showcase/grid-mobile.png'
 -
   slug: 'calendar'
-  image: 'calendar.png'
+  image: 'showcase/calendar.png'
   title: 'Calendrier'
   icon: 'calendar-alt'
+  mobile:
+    image: 'showcase/calendar-mobile.png'
 -
   slug: 'kanban'
-  image: 'kanban.png'
+  image: 'showcase/kanban.png'
   title: 'Board Kanban'
-  icon: 'grip-vertical'
+  icon: 'columns'
+-
+  slug: 'charts'
+  image: 'showcase/charts.png'
+  title: 'Graphiques'
+  icon: 'chart-bar'
+-
+  slug: 'dashboard'
+  image: 'showcase/dashboard.png'
+  title: 'Dashboard'
+  icon: 'tachometer-alt-fast'
+-
+  slug: 'document'
+  image: 'showcase/document.png'
+  title: 'Document'
+  icon: 'file-alt'
+-
+  slug: 'form'
+  image: 'showcase/form.png'
+  title: 'Formulaire'
+  icon: 'edit'
