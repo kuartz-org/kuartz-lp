@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '.tmp/dist'),
-    filename: 'assets/javascripts/[name].bundle.js'
+    filename: './assets/javascripts/[name].bundle.js'
   },
   resolve: {
     modules: [

@@ -2,48 +2,60 @@ import { Controller } from "stimulus";
 
 export default class extends Controller {
   static get targets() {
-    return [ "image", "imageMobile", "link", "showMobile" ]
+    return [ "screenshot", "link" ]
   }
 
   initialize() {
-    this.setActive(this.linkTargets[0]);
+    this.currentIndex = 0;
   }
 
-  displayImage(event) {
+  connect() {
+    this.displayScreenshot(this.linkTargets[this.currentIndex].dataset.slug);
+    this.startAutoPlay();
+  }
+
+  disconnect() {
+    this.stopAutoPlay();
+  }
+
+  startAutoPlay() {
+    this.refreshTimer = setInterval(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.linkTargets.length;
+      this.displayScreenshot(this.linkTargets[this.currentIndex].dataset.slug);
+    }, 2000);
+  }
+
+  stopAutoPlay() {
+    if (this.refreshTimer) {
+      clearInterval(this.refreshTimer)
+    }
+  }
+
+  handleDisplayScreenshot(event) {
     event.preventDefault();
+    this.stopAutoPlay();
+    this.displayScreenshot(event.currentTarget.dataset.slug);
+  }
 
-    this.imageTarget.setAttribute('src', event.target.dataset.image);
-
-    this.showMobileTarget.classList.add('hidden');
+  displayScreenshot(slug) {
+    this.screenshotTargets.forEach((screenshot) => {
+      screenshot.classList.toggle('hidden', screenshot.dataset.slug != slug);
+    });
 
     this.linkTargets.forEach((link) => {
-      link.classList.remove('bg-gray-400');
-      link.classList.replace('text-gray-700', 'text-gray-500');
-      link.classList.add('hover:text-gray-600');
-    })
-
-    this.setActive(event.currentTarget);
+      link.dataset.slug === slug ? this.setActive(link) : this.setInactive(link);
+    });
   }
 
-  displayImageWithMobile(event) {
-    event.preventDefault();
-
-    this.imageTarget.setAttribute('src', event.target.dataset.image);
-    this.imageMobileTarget.setAttribute('src', event.target.dataset.imageMobile);
-    this.showMobileTarget.classList.remove('hidden');
-
-    this.linkTargets.forEach((link) => {
-      link.classList.remove('bg-gray-400');
-      link.classList.replace('text-gray-700', 'text-gray-500');
-      link.classList.add('hover:text-gray-600');
-    })
-
-    this.setActive(event.currentTarget);
+  setActive(link) {
+    link.classList.replace('text-gray-500', 'text-white');
+    link.classList.remove('hover:text-gray-600');
+    link.classList.add('k-btn-primary');
   }
 
-  setActive(element) {
-    element.classList.replace('text-gray-500', 'text-gray-700');
-    element.classList.remove('hover:text-gray-600');
-    element.classList.add('bg-gray-400');
+  setInactive(link) {
+    link.classList.replace('text-white', 'text-gray-500');
+    link.classList.remove('k-btn-primary');
+    link.classList.add('hover:text-gray-600');
   }
 }
