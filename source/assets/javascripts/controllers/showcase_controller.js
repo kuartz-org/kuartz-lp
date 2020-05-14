@@ -22,7 +22,7 @@ export default class extends Controller {
     this.refreshTimer = setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.linkTargets.length;
       this.displayScreenshot(this.linkTargets[this.currentIndex].dataset.slug);
-    }, 2000);
+    }, 3000);
   }
 
   stopAutoPlay() {
