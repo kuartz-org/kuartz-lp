@@ -1,16 +1,16 @@
 section class="md:flex md:items-center md:justify-between"
   header class="md:mr-2"
     h2.text-2xl.leading-none.font-semibold.text-white.tracking-normal.text-center class="md:text3xl md:text-left"
-      | Discutons de votre projet
-    p.text-gray-300.leading-tight.mt-2.text-center class="md:text-xl md:text-left md:w-2/3"
-      | Pour adapter notre outil aux besoins de votre entreprise.
+      | Découvrer les cas d'usages
+    p.text-gray-300.leading-tight.mt-2.text-center class="md:text-xl md:text-left"
+      | En recevant notre plaqette commerciale par email.
 
   article.ml-2.mt-6 class="md:mt-0"
-    form name="new-contact" data-netlify="true"
+    form name="brochure" data-netlify="true"
       div class="md:flex md:items-center"
         = label_tag :email_address, class: 'hidden'
         = text_field_tag :email_address, placeholder: 'alice@exemple.fr', class: 'w-full flex-grow bg-white px-4 py-3 rounded shadow'
 
-        = submit_tag "Envoyer", class: 'k-btn-primary px-5 py-3 text-indigo-100 font-semibold rounded block w-full md:w-auto text-center md:inline cursor-pointer md:ml-4 shadow mt-6 md:mt-0'
+        = submit_tag "Recevoir la plaquette", class: 'k-btn-primary px-5 py-3 text-indigo-100 font-semibold rounded block w-full md:w-auto text-center md:inline cursor-pointer md:ml-4 shadow mt-6 md:mt-0'
     p.text-gray-400.leading-tight.mt-2.text-center class="md:text-left"
       | Vos données personnelles ne seront jamais partagées.
